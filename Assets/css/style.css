@@ -23,9 +23,7 @@
   header{
     background-color: rgba(49, 52, 61, 1);
     width: 100%;
-    display: flex;
-    /* padding-left: 10px;
-    padding-right: 80px; */
+    display: flex;   
     justify-content: space-between;
 
   }
@@ -44,13 +42,14 @@
     float: right;
     padding-top: 10px;
     justify-content: space-between;
+    font-weight: bold;
     
     
     
   }
 
   .nav-link:hover {
-    background-color: #eee;
+    background-color: var(--secondary);
     transition: background-color 0.5s ease;
     
   }
@@ -74,9 +73,10 @@
 
   a{
     text-decoration: none;
-    color: rgba(146, 204, 206, 1);
+    color: var(--secondary);
     border-bottom: 3px solid var(--secondary);
     padding: 5px;
+    
 
 
     
@@ -106,12 +106,9 @@
     font-size: 20px;
   }
 
-  .wrapped{
-    
-  }
-
+  
   .hero{
-    background-image: url(../images/02-hero-bg.jpg);
+    background-image:linear-gradient(to bottom, rgba(36, 55, 163, 0.52), rgba(33, 50, 141, 0.73)), url(../images/02-hero-bg.jpg);
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -137,21 +134,87 @@
     left: 10%;
     position: relative;
     align-items:flex-start;
+    flex-wrap: wrap;
 
   }
 
-  .line{
-    border-right: 3px solid var(--secondary);
+  .line1 {
+    border-right: 3px solid var(--primary);
     height: 300px;
   }
+
+  .work {
+    display: flex;
+    left: 10%;
+    position: relative;
+    align-items:flex-start;
+    flex-wrap: wrap;
+  }
+
+  .line2 {
+    border-right: 3px solid var(--primary);
+    height: 300px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .row img {
+    width: 20%; 
+    height: auto; 
+    margin: 0 5px;
+  }
+
+  .first-image {
+    height: 500px;
+    width: 800px;
+  }
+  
+  
+  .row:first-child img {
+    width: 100%; 
+    margin: 0;
+  }
+  
+  .contact-me {
+    display: flex;
+    left: 10%;
+    position: relative;
+    align-items:flex-start;
+    flex-wrap: wrap; 
+  }
+
+  .line3 {
+    border-right: 3px solid var(--primary);
+    height: 300px;
+  }
+
+  .footer-link{
+    justify-content: space-between;
+  }
+
+  .footer-link:hover {
+    background-color: var(--secondary);
+    transition: background-color 0.5s ease;
+  }
+
   
 
   .relation{
     float: left;
   }
 
-  .work{
-    flex-wrap: wrap;
-  }
 
